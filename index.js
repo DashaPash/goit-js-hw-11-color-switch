@@ -29,7 +29,7 @@ function clickStartBtn(e) {
 
 function clickStopBtn(e) {
     if (e.target.textContent === 'Stop') {
-        document.body.removeAttribute('style', `background-color: ${colors[randomIntegerFromInterval(0, colors.length - 1)]}`)
+        document.body.removeAttribute('style')
         clearInterval(intervalID)
     }
     startBtn.disabled = false
